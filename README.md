@@ -2,12 +2,16 @@
 
 --------------------------------------------------------------------------------
 
-This repository provides tutorial code for deep learning researchers to learn [PyTorch](https://github.com/pytorch/pytorch). In the tutorial, most of the models were implemented with less than 30 lines of code. Before starting this tutorial, it is recommended to finish [Official Pytorch Tutorial](http://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html).
+该库fork自 [yunjey/pytorch-tutorial](https://github.com/yunjey/pytorch-tutorial) ，作者为[Yunjey Choi](https://github.com/yunjey) .
+
+原代码是python文件，由于本人是远程使用GPU服务器，可视化界面只能通过Jupyter Notebook的方式，所以将原有代码全部迁移到了Jupyter Notebook上。
+
+同时将一些搜集的资料链接附在notebook上，方便阅读代码的同时查阅资料。
 
 
 <br/>
 
-## Table of Contents
+## 原Repo目录 [yunjey/pytorch-tutorial](https://github.com/yunjey/pytorch-tutorial) 
 
 #### 1. Basics
 * [PyTorch Basics](https://github.com/yunjey/pytorch-tutorial/tree/master/tutorials/01-basics/pytorch_basics/main.py)
@@ -35,23 +39,71 @@ This repository provides tutorial code for deep learning researchers to learn [P
 
 <br/>
 
-## Getting Started
-```bash
-$ git clone https://github.com/yunjey/pytorch-tutorial.git
-$ cd pytorch-tutorial/tutorials/PATH_TO_PROJECT
-$ python main.py
-```
+## Jupyer Notebook 目录
+
+#### 1. 基础篇
+
+- [PyTorch Basics](https://github.com/veraposeidon/pytorch-tutorial/blob/master/tutorials/01-basics/pytorch_basics/PyTorch%20Basics.ipynb)
+- [Linear Regression](https://github.com/veraposeidon/pytorch-tutorial/blob/master/tutorials/01-basics/linear_regression/Linear%20Regression.ipynb)
+- [Logistic Regression](https://github.com/veraposeidon/pytorch-tutorial/blob/master/tutorials/01-basics/logistic_regression/logistic_regression.ipynb)
+- [Feedforward Neural Network](https://github.com/veraposeidon/pytorch-tutorial/blob/master/tutorials/01-basics/feedforward_neural_network/feedforward_neural_network.ipynb)
+
+#### 2. 中级篇
+
+- [Convolutional Neural Network](https://github.com/veraposeidon/pytorch-tutorial/blob/master/tutorials/02-intermediate/convolutional_neural_network/convolutional_neural_network.ipynb)
+- [Deep Residual Network](https://github.com/veraposeidon/pytorch-tutorial/blob/master/tutorials/02-intermediate/deep_residual_network/deep_residual_network.ipynb)
+- [Recurrent Neural Network](https://github.com/veraposeidon/pytorch-tutorial/blob/master/tutorials/02-intermediate/recurrent_neural_network/recurrent_neural_network.ipynb)
+- [Bidirectional Recurrent Neural Network](https://github.com/veraposeidon/pytorch-tutorial/blob/master/tutorials/02-intermediate/bidirectional_recurrent_neural_network/bidirectional_recurrent_neural_network.ipynb)
+- [Language Model (RNN-LM)](https://github.com/veraposeidon/pytorch-tutorial/blob/master/tutorials/02-intermediate/language_model/language_model.ipynb)
+
+#### 3. 高级篇
+
+- [Generative Adversarial Networks](https://github.com/veraposeidon/pytorch-tutorial/blob/master/tutorials/03-advanced/generative_adversarial_network/generative_adversarial_network.ipynb)
+- [Variational Auto-Encoder](https://github.com/veraposeidon/pytorch-tutorial/blob/master/tutorials/03-advanced/variational_autoencoder/variational_autoencoder.ipynb)
+- [Neural Style Transfer](https://github.com/veraposeidon/pytorch-tutorial/blob/master/tutorials/03-advanced/neural_style_transfer/neural_style_transfer.ipynb)
+- [Image Captioning (CNN-RNN)](https://github.com/veraposeidon/pytorch-tutorial/blob/master/tutorials/03-advanced/image_captioning/image_captioning.ipynb)
+
+#### 4. 番外篇
+
+- [TensorBoard in PyTorch](https://github.com/veraposeidon/pytorch-tutorial/blob/master/tutorials/04-utils/tensorboard/tensorboard.ipynb)
 
 <br/>
 
-## Dependencies
-* [Python 2.7 or 3.5+](https://www.continuum.io/downloads)
-* [PyTorch 0.4.0](http://pytorch.org/)
+## 生成博客 目录
+
+#### 1. 基础篇
+
+- [Pytorch 基础篇（1）：Pytorch基础](https://shenxiaohai.me/2018/10/18/pytorch_tutorial_basic_01/)
+
+- [Pytorch 基础篇（2）：线性回归（Linear Regression）](https://shenxiaohai.me/2018/10/18/pytorch_tutorial_basic_02/)
+
+- [Pytorch 基础篇（3）：逻辑斯蒂回归（Logistic Regression）](https://shenxiaohai.me/2018/10/18/pytorch_tutorial_basic_03/)
+
+- [Pytorch 基础篇（4）：前馈神经网络（Feedforward Neural Network）](https://shenxiaohai.me/2018/10/18/pytorch_tutorial_basic_04/)
 
 
+#### 2. 中级篇
 
-<br/>
+- [Pytorch 中级篇（1）：卷积神经网络（Convolutional Neural Network）](https://shenxiaohai.me/2018/10/18/pytorch-tutorial-intermediate-01/)
 
+- [Pytorch 中级篇（2）：深度残差网络（Deep Residual Networks）](https://shenxiaohai.me/2018/10/19/pytorch_tutorial_intermediate_02/)
 
-## Author
-Yunjey Choi/ [@yunjey](https://github.com/yunjey)
+- [Pytorch 中级篇（3）：循环神经网络（Recurrent Neural Network）](https://shenxiaohai.me/2018/10/19/pytorch-tutorial-intermediate-03/)
+
+- [Pytorch 中级篇（4）：双向循环神经网络（Bidirectional Recurrent Neural Network）](https://shenxiaohai.me/2018/10/19/pytorch-tutorial-intermediate-04/)
+
+- [Pytorch 中级篇（5）：语言模型（Language Model (RNN-LM)）](https://shenxiaohai.me/2018/10/20/pytorch-tutorial-intermediate-05/)
+
+#### 3. 高级篇
+
+- [Pytorch 高级篇（1）：生成对抗网络（Generative Adversarial Networks）](https://shenxiaohai.me/2018/10/20/pytorch-tutorial-advanced-01/)
+
+- [Pytorch 高级篇（2）：变分自编码器（Variational Auto-Encoder）](https://shenxiaohai.me/2018/10/20/pytorch-tutorial-advanced-02/)
+
+- [Pytorch 高级篇（3）：神经风格迁移（Neural Style Transfer）](https://shenxiaohai.me/2018/10/21/pytorch-tutorial-advanced-03/)
+
+- [Pytorch 高级篇（4）：图像标注（Image Captioning (CNN-RNN)）](https://shenxiaohai.me/2018/10/22/pytorch-tutorial-advanced-04/)
+
+#### 4. 番外篇
+
+- [Pytorch 番外篇：Pytorch中的TensorBoard（TensorBoard in PyTorch）](https://shenxiaohai.me/2018/10/23/pytorch-tutorial-TensorBoard/)
